@@ -77,8 +77,64 @@ form{
     height: 300px;
     border: 1px solid black;
     text-align: left;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.temp, .wind, .humidity, .uvindex{
+    padding-bottom: 20px;
+}
+
+.uv-value{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.uv-favorable{
+    background-color: green;
+}
+
+.uv-moderate{
+    background-color: orange;
+}
+
+.uv-severe{
+    background-color: red;
 }
 
 .weather-future{
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.forecast-container{
+    display: flex;
+    height: 250px;
+
+}
+
+.forecast{
+    flex: 1;
+    background-color: rgb(75, 94, 119);
+    margin-right: 15px;
+    padding: 10px;
+    color:white;
+}
+
+.future-date, .future-temp, .future-wind, .future-humidity{
+    font-size: 12px;
+}
+
+.city {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.city > .name {
+    font-weight: bold;
+}
+
+.city > .weather-icon {
+    width: 50px;
+    height: 50px;
 }
